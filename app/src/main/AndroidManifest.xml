@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Java_black_and_white_game">
         <activity
+            android:name=".game"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

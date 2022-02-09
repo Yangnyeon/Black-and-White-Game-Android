@@ -5,134 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
 
-
-
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="90sp"
         >
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:textSize="70sp"
+            android:text="흑"
+            android:textColor="#938B8B"
+            ></TextView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="90sp"
-                android:text="0"
-                android:layout_marginLeft="60sp"
-                android:layout_marginTop="80sp"
-                android:id="@+id/mescore"
-                ></TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="90sp"
-                android:text=":"
-                android:layout_marginLeft="90sp"
-                android:layout_marginTop="80sp"
-                ></TextView>
+            android:textSize="70sp"
+            android:text=" 과 백 게임"
+            android:textColor="#FFFFFF"
+            ></TextView>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="90sp"
-                android:text="0"
-                android:layout_marginLeft="70sp"
-                android:layout_marginTop="80sp"
-                android:id="@+id/comscore"
-                ></TextView>
-        </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="내가현재 가지고있는 숫자"
-                android:textSize="35sp"
-                android:gravity="center"
-                android:layout_marginTop="90sp"
-                ></TextView>
+    </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="숫자"
-                android:textSize="40sp"
-                android:id="@+id/menumber"
-                ></TextView>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="입력할 숫자 입력"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:layout_marginTop="30sp"
-                android:id="@+id/edit"
-                ></EditText>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="70sp"
+        android:layout_marginTop="200sp"
+        android:layout_gravity="center"
+        android:id="@+id/gogo"
+        >
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="입력"
-                android:layout_gravity="center"
-                android:layout_marginTop="30sp"
-                android:id="@+id/select"
-                ></Button>
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="120sp"
+            android:textSize="50sp"
+            android:text="시작하기"
+            android:padding="30sp"
+            android:gravity="center"
+            android:layout_gravity="center"
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="컴퓨터 숫자"
-                android:textSize="10sp"
-                android:gravity="center"
-                ></TextView>
+            ></TextView>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="숫자"
-                android:textSize="20sp"
-                android:id="@+id/comnumber"
-                ></TextView>
+    </androidx.cardview.widget.CardView>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="컴퓨터 가 입려한 숫자 : 0"
-                android:textSize="20sp"
-                android:id="@+id/comedit"
-                ></TextView>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="내가 입력한 숫자 : 0"
-                android:textSize="20sp"
-                android:id="@+id/meedit"
-                ></TextView>
 
-        </LinearLayout>
 
-    </ScrollView>
+
+
 
 </LinearLayout>
 
