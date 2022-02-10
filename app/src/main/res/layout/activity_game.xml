@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".game"
     android:orientation="vertical"
-    android:background="@drawable/bg2">
+    android:background="@drawable/bg2"
+    android:id="@+id/swipe">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -98,6 +99,7 @@
                 android:gravity="center"
                 android:layout_marginTop="50sp"
                 android:textColor="#FFFFFF"
+                android:id="@+id/text1"
                 ></TextView>
 
 
@@ -122,6 +124,8 @@
                 android:textColor="#FFFFFF"
                 android:background="#4DFFFFFF"
                 android:backgroundTint="#FFFFFF"
+                android:inputType="number"
+                android:maxLength="1"
                 ></EditText>
 
             <Button
@@ -154,4 +158,4 @@
 
 
 
-</LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
